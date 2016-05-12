@@ -1,0 +1,22 @@
+Station Name,Station Identifier,Station Type,County,Elevation (ft.),Lat. & Long.,WIMS ID,Shrub Greeness Factor,herbaceous Greeness Factor,Season Code
+Tyler Pounds Field,KTYR,ASOS,Smith,541,32.354 x 95.403,411701,15,15,2
+Corsicana Municipal Airport,KCRS,ASOS,Navarro,446,32.028 x 96.401,412001,15,15,2
+Easterwood Field,KCLL,ASOS,Brazos,318,30.589 x 96.364,413901,15,15,2
+El Paso International Airport,KELP,ASOS,El Paso,3957,31.807 x 106.378,416901,15,15,2
+Winkler County Airport,KINK,ASOS,Winkler,2822,31.78 x 103.201,417501,15,15,2
+Pecos County Airport,KFST,ASOS,Pecos,2612,30.916 x 102.916,417601,15,15,2
+Kimble County Airport,KJCT,ASOS,Kimble,1729,30.511 x 99.764,417803,15,15,2
+Del Rio International Airport,KDRT,ASOS,Val Verde,997,29.374 x 100.927,418003,15,15,2
+Hondo Municipal Airport,KHDO,ASOS,Medina,928,29.36 x 99.177,418103,15,15,2
+Stinson Municipal Airport,KSSF,ASOS,Bexar,574,29.337 x 98.471,418104,15,15,2
+New Braunfels Municipal Airport,KBAZ,ASOS,Comal,646,29.705 x 98.042,418105,15,15,2
+La Salle County Airport,KCOT,ASOS,La Salle,476,28.457 x 99.218,418402,15,15,2
+Alice International Airport,KALI,ASOS,Jim Wells,177,27.741 x 98.027,418504,15,15,2
+Dalhart Municipal Airport,KDHT,ASOS,Dallam,3989,36.023 x 102.547,418702,15,15,2
+Amarillo International Airport,KAMA,ASOS,Potter,3606,35.219 x 101.706,418803,15,15,2
+Lubbock International Airport,KLBB,ASOS,Lubbock,3281,33.664 x 101.823,419002,15,15,2
+"San Angelo, Mathis Field",KSJT,ASOS,Tom Green,1916,31.358 x 100.496,419204,15,15,2
+"Sheppard AFB, Wichita Falls",KSPS,ASOS,Wichita,1014,33.989 x 98.492,419302,15,15,2
+Mineral Wells Airport,KMWL,ASOS,Palo Pinto,974,32.782 x 98.06,419404,15,15,2
+Denton Municipal Airport,KDTO,ASOS,Denton,650,33.201 x 97.198,419603,15,15,2
+Terrell Municipal Airport,KTRL,ASOS,Kaufman,472,32.709 x 96.267,419703,15,15,2
