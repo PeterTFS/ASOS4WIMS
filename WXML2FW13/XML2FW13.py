@@ -10,6 +10,7 @@ import datetime
 import os
 import string
 import sys
+import csv
 
 #------------------------------------------------------------------------------------------------
 # Functions for writing the station dic to a csv(or text file with ',' delemitated)
@@ -100,7 +101,7 @@ def ParseXML(station,XMLFileName):
     tree = ET.parse(XMLFileName)
     root = tree.getroot()
     print "Parsing XML for FW13 formating for station : %s  " %(station)
-    filewf13 = os.path.join(fileWF13, "TX-RAWS.fw13")
+    filewf13 = os.path.join(fileWF13, "RAWSFW13.fw13")
     with open(filewf13,'a') as F13:
         if not root.getchildren():
             MSG = "There is a problem of RAWS observation for station in WIMS: %s "% (station)
@@ -166,7 +167,7 @@ if not os.path.exists(fileWF13):
     os.makedirs(fileWF13)
 
 # A csv (or text) file has the station name and station ID
-stationfile = os.path.join(WorkSpace,'tx_raws.csv')
+stationfile = os.path.join(WorkSpace,'stations_raws.csv')
 
 try:
     RAWS_TX = readDict(stationfile)
@@ -253,11 +254,6 @@ except:
                  'WOODVILLE': 414402,
                  'ZAVALLA': 413503
         }
-
-##RAWS_TX = { 'PX WELL': 417105}
-##RAWS_TX = {'ANAHUAC NWR': 416099}
-##RAWS_TX = {'WHEELER':418802}
-##Create a simple interface in command line to provide start and end days to download (otherwize 7 days from now)
 ## The start and end day format should be day-month abbreciation-year  for e.g. today is 05/11/2016 the input should be 11-May-2016
 if len(sys.argv) > 2:
     start = sys.argv[1]
@@ -286,9 +282,9 @@ else:
     ##start = ninetyday.strftime("%d-%b-%y")
     ##start = hundredeightyday.strftime("%d-%b-%y")
 
-#----------------------------------------------------------------------------------
-#Processing 79 RAWS station in TX with provided station name and station id
-#---------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------
+#Processing XML to FW13 for each station in the listed csv file with provided station name and station id
+#--------------------------------------------------------------------------------------------------------
 for station,stationid in RAWS_TX.items():
     print station,stationid
     DownloadASOS(station,stationid,start,end)
