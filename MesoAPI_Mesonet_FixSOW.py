@@ -30,14 +30,14 @@ pandas.options.mode.chained_assignment = None
 
 #Send email if issue happenned for notifying Mike for mannually editting
 def sendEmail(TXT):
-    server = smtplib.SMTP('tfsbarracuda.tamu.edu', 25)
+    server = smtplib.SMTP('**.tamu.edu', 25)
     #server.set_debuglevel(1)
     SUBJECT = 'There is an issue with MESONET2WIMS'
     message = 'Subject: %s\n\n%s' % (SUBJECT, TXT)
     print "Sending email to " + message
-    #tolist=["pyang@tfs.tamu.edu","rmodala@tfs.tamu.edu"]
-    tolist=["pyang@tfs.tamu.edu"]
-    server.sendmail("pyang@tfs.tamu.edu", tolist, message)
+    #tolist=["**.edu"]
+    tolist=["**"]
+    server.sendmail("**", tolist, message)
 
 # Processing the UTC time to Loca;
 def UTC4LOCAL(observation_time):
@@ -623,7 +623,7 @@ Stations = {'CNST2':418703,
 #Test：
 #Stations = {'CNST2':418703}
 #####Parameters for downloading Mesonet data using MesoWest API#####
-MyToken = '994a7e628db34fc68503d44c447aaa6f'
+MyToken = '**'
 base_url = 'http://api.mesowest.net/v2/stations/'
 query_type = 'timeseries'
 csv_format = '&output=csv'
